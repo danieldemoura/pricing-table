@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+    --title-header: 48px;
+    --paragraph-header: 18px;
+    --title-pricing: 18px;
+    --title-pricing-color: #1E2338;
+    --price: 36px;
+    --text: 14px;
+}
+
+.header-main {
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    padding: 0px 30px;
+    color: var(--page-background);
+    background-color: var(--blue);
+}
+
+.header-main h1 {
+    padding: 100px 0px 10px 0px;
+    font-size: var(--title-header);
+}
+
+.header-main p {
+    font-size: var(--paragraph-header);
+}
+
+.header-main h1, .header-main p {
+    width: 555px;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    flex-flow: wrap;
+    justify-content: center;
+    padding-bottom: 110px;
+    background-color: var(--page-background);
+
+}
+
+main section:nth-child(2) {
+    height: 490px;
+    margin-top: -180px;
+}
+
+main section:hover {
+    transform: scale(1.05);
+    transition: transform .5s ease;
+}
+
+.pricing {
+    display: flex;
+    flex-flow: column;
+    flex-basis: 345px;
+    height: 470px;
+    overflow: hidden;
+
+    margin-top: -167px;
+    margin-bottom: 200px;
+    border-radius: 8px;
+    padding: 30px;
+
+    box-shadow: 0px 1px 2px rgb(142, 150, 185);
+    background-color: var(--page-background);
+}
+
+.pricing-c {
+    display: flex;
+    align-items: center;
+    gap: 143px;
+    width: 125%;
+    height: 76px;
+
+    background-color: var(--yellow);
+    padding: 0px 30px;
+    margin: -30px 0px 10px -30px;
+}
+
+.pricing .pricing-c h2 {
+    font-size: 20px;
+    color: var(--blue);
+}
+
+.pricing .pricing-c span {
+    background-color: var(--blue);
+    color: var(--page-background);
+    padding: 8px 24px;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pricing header:not(.pricing-c) {
+    padding-bottom: 20px;
+}
+
+.pricing header h2 {
+    font-size: var(--title-pricing);
+    color: var(--title-pricing-color);
+}
+
+.price {
+    font-size: var(--price);
+    color: var(--title-pricing-color);
+    font-weight: bold;
+}
+
+.price-unidade {
+    font-size: var(--paragraph-header);
+}
+
+.mes {
+    font-size: var(--title-pricing);
+    color: var(--gray);
+    font-weight: normal;
+    margin-left: -3px;
+}
+
+.pricing div p, .pricing ul li{
+    font-size: var(--text);
+    color: var(--gray);
+}
+
+.pricing div p {
+    padding: 10px 0px 20px 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing ul {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    flex: 1;
+    font-weight: 600;
+}
+
+.pricing ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pricing button {
+    line-height: 49px;
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    background-color: var(--page-background);
+    color: var(--blue);
+    font-size: var(--title-pricing);
+    font-weight: 600;
+}
+
+.pricing .button-b {
+    background-color: var(--blue);
+    color: var(--page-background);
+}
+
+@media screen and (max-width: 600px) {
+    .header-main h1 {
+        width: auto;
+        font-size: 32px;
+    }
+
+    .header-main p {
+        font-size: var(--text);
+        width: auto;
+    }
+}
